@@ -12,12 +12,16 @@ import org.junit.BeforeClass;
 public class Parse4JTestCase {
 	
 	public static String CLASS_NAME = "parse4j";
-	private static String APP_ID = "RWjFpDDbwCIXF8Gy9dHEBpR7Fs2PZ0UzcNdxhAvf";
-	private static String APP_REST_API_ID = "EWpTGoOFgGr9vXfPLBRYZjhDL0pg4MQ1F7i3wWAq";
+//	private static String APP_ID = "RWjFpDDbwCIXF8Gy9dHEBpR7Fs2PZ0UzcNdxhAvf";
+//	private static String APP_REST_API_ID = "EWpTGoOFgGr9vXfPLBRYZjhDL0pg4MQ1F7i3wWAq";
 
+	private static String APP_ID = "g0aeaj0c2j5iab43aj7e94ouwqsgvuw6x46986tcu7oaap4x";
+	private static String APP_REST_API_ID = "mkmi33s2skg7keg1s126xuzn2hoik464xsgjudq04d9bj927";
+	
 	@BeforeClass
 	public static void setupParse() {
 		System.out.println("setupParse(): initializing...");
+		ParseConstants.API_ENDPOINT="https://api.leancloud.cn";
 		Parse.initialize(APP_ID, APP_REST_API_ID);
 	}
 	
