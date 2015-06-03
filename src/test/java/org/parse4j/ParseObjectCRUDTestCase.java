@@ -32,7 +32,7 @@ public class ParseObjectCRUDTestCase extends Parse4JTestCase {
 			assertNull("save(): should not have thrown ParseException", pe);
 		}
 	}
-	
+	/*
 	@Test
 	public void saveWithFile() {
 		System.out.println("saveWithFile(): initializing...");
@@ -69,7 +69,7 @@ public class ParseObjectCRUDTestCase extends Parse4JTestCase {
 			assertNull("saveWithFile(): should not have thrown ParseException", pe);
 		}
 	}
-	
+	*/
 	@Test
 	public void update() {
 		System.out.println("update(): initializing...");
